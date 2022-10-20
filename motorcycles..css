@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  outline: none;
+  overflow-x: hidden;
+  background-color: black;
+}
+.background-image {
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 460px;
+}
+.motorcycle-title,
+.subtitle {
+  margin: auto auto;
+  text-align: center;
+  color: yellow;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  justify-content: center;
+  margin-top: 10px;
+  text-shadow: 0.3rem 0.3rem 0.3rem skyblue;
+}
+
+@media (max-width: 450) {
+  .background-image {
+    width: 50vw;
+    height: 230px;
+  }
+
+  .motorcycle-title {
+    font-size: 300;
+    font-size: 1rem;
+    justify-content: center;
+    color: blue;
+  }
+  .motorcycle-images {
+    width: 50vw;
+    height: 50vh;
+  }
+}

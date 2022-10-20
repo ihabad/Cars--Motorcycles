@@ -1,0 +1,330 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  outline: none;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Vesper Libre", serif;
+  color: rgb(255, 249, 252);
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+nav {
+  width: 90%;
+  margin: 3px auto;
+  text-align: right;
+  position: fixed;
+  top: 2px;
+  background-color: black;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+  margin: 0px 10px;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #fee715ff;
+}
+
+/*first section*/
+
+.first-container {
+  width: 100vw;
+  height: 560px;
+  margin: auto auto;
+  text-align: center;
+  background-image: url(./images/gallery-car-2.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.first-header {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 900;
+  color: yellow;
+  transform: translateX(-5%);
+  text-shadow: 0.2rem 0.2rem 0.2rem skyblue;
+  margin-left: 55%;
+}
+
+/*second section*/
+
+.cars-section {
+  text-align: center;
+  font-size: "poppins", sans-serif;
+  margin-bottom: 100px;
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 185%;
+  transform: skew(-13deg);
+  border: solid white;
+  border-radius: 4.5rem;
+  width: 100vw;
+}
+
+.about-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.about-container {
+  width: 85%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.row-one,
+.row-two,
+.row-three {
+  width: 90%;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.grid-item {
+  border: 2px solid purple;
+  width: 25%;
+  height: 210px;
+  margin-left: 85px;
+  background-size: cover;
+  background-position: center;
+}
+
+#car-one {
+  background-image: url(./images/gallery-car-1.jpg);
+}
+#car-two {
+  background-image: url(./images/car-2.jpg);
+}
+#car-three {
+  background-image: url(./images/gallery-car-3.jpg);
+}
+#car-four {
+  background-image: url(./images/gallery-car-4.jpg);
+}
+#car-five {
+  background-image: url(./images/gallery-car-5.1.jpg);
+}
+#car-six {
+  background-image: url(./images/gallery-car-6.jpg);
+}
+#car-seven {
+  background-image: url(./images/car-1.jpg);
+}
+#car-eight {
+  background-image: url(./images/car-3.jpg);
+}
+#car-nine {
+  background-image: url(./images/gallery-car-2.jpg);
+}
+.grid-item:hover {
+  opacity: 0.65;
+}
+
+.button {
+  color: black;
+  margin-top: 15rem;
+  margin-left: 13%;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.fa-visit {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.9rem;
+  transform: translateX(-5%);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(216, 204, 72);
+}
+.motorcycles-section {
+  width: 100vw;
+  height: 700px;
+  background-image: url(./images/bg-motor.1.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 115%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.section-title {
+  margin-left: 13%;
+  color: #d4ef27;
+  font-size: 3rem;
+  font-weight: 800;
+  transform: translateX(-5%);
+  text-shadow: 0.1rem 0.1rem 0.1rem skyblue;
+}
+
+#contact-section {
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+  color: #ffffdd;
+  margin-right: 75px;
+  background-image: url(./images/bg.401.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contact-title {
+  margin: 25px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: uppercase;
+  font-size: 280%;
+  font-weight: 900;
+  text-align: center;
+  margin-left: 10%;
+  color: #fee715ff;
+  transform: translateX(-5%);
+  text-shadow: 0.2rem 0.2rem 0.2rem skyblue;
+}
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 50%;
+  height: 3rem;
+  margin: 2rem;
+  background-color: transparent;
+  padding: 0.4rem;
+  border: 0.1rem solid rgb(103, 96, 39);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: rgb(240, 244, 245);
+  flex-shrink: 0;
+  transition: background-color 0.5s;
+}
+.contact-form textarea {
+  max-width: 100%;
+  min-height: 5rem;
+}
+.form-input:focus {
+  background-color: rgba(215, 192, 21, 0.5);
+}
+.contact-form .form-btn {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: rgb(12, 93, 120);
+  cursor: pointer;
+}
+.email {
+  font-size: 140%;
+  margin-right: 60px;
+}
+.social-icons a {
+  font-size: 1.7em;
+  padding-right: 40px;
+}
+
+.gmail,
+.phone {
+  height: 35px;
+  width: 25px;
+  margin: 5px;
+}
+
+.social-icons:hover {
+  transform: scale(1.1);
+}
+
+/*Media query*/
+
+@media (max-width: 950px) {
+  .first-container {
+    width: 100vw;
+  }
+  body {
+    padding-right: 0;
+  }
+  .navbar {
+    width: 20vw;
+    padding: 2rem 0 0 2rem;
+  }
+  menu {
+    left: 20vw;
+  }
+  section {
+    left: 20vw;
+  }
+  .row-one,
+  .row-two,
+  .row-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-item {
+    width: 70%;
+    margin: 3rem 0;
+  }
+
+  @media (max-width: 600px) {
+    html {
+      font-size: 55.5%;
+    }
+    .navbar {
+      width: 40vw;
+      padding: 2rem 0 0 2rem;
+    }
+    menu.change {
+      left: 20vw;
+    }
+    section.change {
+      left: 20vw;
+    }
+    .section-heading {
+      font-size: 1.5rem;
+    }
+    .first-container {
+      width: 95vw;
+    }
+    .row-one,
+    .row-two,
+    .row-three {
+      width: 100%;
+      margin: 2rem 0;
+    }
+    .contact-form {
+      width: 40rem;
+      border: 1rem solid;
+    }
+  }
+
+  @media (max-width: 400px) {
+    html {
+      font-size: 40%;
+    }
+  }
+}
